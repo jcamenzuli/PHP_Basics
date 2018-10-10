@@ -1,0 +1,13 @@
+// main: style.scss
+@function color($coll, $key) {
+    @if map-has-key($coll, $key) {
+        @return map-get($coll, $key)
+    }
+}
+
+// this function will get the colour from a collection.
+@function size($coll, $key) {
+    @if map-has-key($coll, $key) {
+        @return map-get($coll, $key)
+    }
+}
